@@ -1,10 +1,9 @@
 from rsa import *
 
-
 if __name__ == '__main__':
     # generate prime numbers p and q
-    p = get_prime()
-    q = get_prime()
+    p = rand_prime()
+    q = rand_prime()
 
     # generate public and private keys
     public_key, private_key = generate_keypair(p, q)
